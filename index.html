@@ -1,0 +1,780 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-6NWH6kQ6w5tJxdlFO9yfDhSW7HtlbhcpTSCtif/1EmFsqcnFfV6/Hi6wFdpDPY3kwIzl1npPTFHILgoATxNf0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="text-white">
+        <div class="min-h-screen transition-colors duration-300 dark bg-gray-900 text-white`">
+        <header class="fixed w-full bg-white dark:bg-gray-900 shadow-md z-50 transition-colors duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="#" class="text-2xl font-bold text-blue-600 dark:text-blue-400">
+        <span class="font-extrabold">Einstein</span><span class="font-light ml--2">Dipondo</span>
+        </a>
+        <div class="hidden md:flex items-center space-x-8">
+        <nav class="flex items-center space-x-8">
+        <a href="#portfolio" class="nav-link text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">Portfolio</a>
+        <a href="#skills" class="nav-link text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">Skills</a>
+        <a href="#about" class="nav-link text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">About</a>
+        <a href="#contact" class="nav-link text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300">Contact</a>
+        </nav>
+        </div>
+        <button id="hamburgerButton"
+            class="md:hidden p-2 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-300 cursor-pointer !rounded-button whitespace-nowrap"
+            aria-label="Toggle menu"
+            >
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <!-- Mobile screen -->
+         <div id="mobileMenu" class="md:hidden transition-all duration-300 overflow-hidden max-h-0">
+            <nav class="flex flex-col space-y-4 px-6 pb-6">
+                <a href="#portfolio" class="nav-link text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 mobile-nav-link" data-target="portfolio">Portfolio</a>
+                <a href="#skills" class="nav-link text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 mobile-nav-link" data-target="skills">Skills</a>
+                <a href="#about" class="nav-link text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 mobile-nav-link" data-target="about">About</a>
+                <a href="#contact" class="nav-link text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-300 mobile-nav-link" data-target="contact">Contact</a>
+            </nav>
+        </div>
+    </Header>
+    <main>
+            /* Hero Section */
+            <section class="relative min-h-screen flex items-center backgroundSize:'cover' backgroundPosition: 'center'">
+                <div class="absolute inset-0 bg-gradient-to-r from-white/90 dark:from-gray-900/90 to-white/50 dark:to-gray-900/50"></div>
+                <div class="container mx-auto px-6 z-10 flex flex-col md:flex-row items-center">
+                <div class="w-full md:w-1/2 text-center md:text-left mb-12 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                <span class="block text-gray-300">Hi, I'm Einstein Dipondo</span>
+                <span class="text-blue-600">Frontend Developer</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
+                Crafting beautiful and responsive user interfaces with modern frontend technologies. Specializing in creating engaging web experiences that users love.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center md:justify-start">
+                <a
+                href="#portfolio"
+                class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md transition-colors duration-300 shadow-lg hover:shadow-xl cursor-pointer !rounded-button whitespace-nowrap"
+                >
+                View My Work
+                </a>
+                <a
+                href="#contact"
+                class="px-8 py-3 bg-transparent border-2 border-blue-800 dark:border-blue-600 text-blue-600 dark:text-blue-600 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 dark:hover:text-gray-900 font-medium rounded-md transition-all duration-300 cursor-pointer !rounded-button whitespace-nowrap"
+                >
+                Contact Me
+                </a>
+                </div>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+                <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-2xl">
+                <img src="public/WhatsApp Image 2025-05-13 at 11.00.49_b386706b.jpg" class="w-full h-full object-cover object-top"/>
+                </div>
+                </div>
+                </div>
+                <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+                <a href="#portfolio" class="text-blue-600 dark:text-blue-400 text-3xl cursor-pointer">
+                <i class="fas fa-chevron-down"></i>
+                </a>
+                </div>
+            </section>
+            <!-- /* Portfolio Section */ -->
+            <section id="portfolio" class="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300">
+            <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">My Portfolio</h2>
+            <div class="w-20 h-1 bg-blue-600 dark:bg-blue-400 mx-auto"></div>
+            <p class="text-gray-600 dark:text-gray-300 mt-6 max-w-2xl mx-auto">
+            Explore some of my recent projects that showcase my skills and expertise in web development.
+            </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <!-- /* Project 1 */ -->
+                <div class="bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <div class="relative h-60 overflow-hidden">
+                <img
+                src="https://readdy.ai/api/search-image?query=Modern%20e-commerce%20website%20interface%20with%20clean%20design%2C%20product%20grid%20layout%2C%20shopping%20cart%2C%20payment%20system%2C%20responsive%20design%2C%20professional%20UI%2FUX%2C%20blue%20and%20white%20color%20scheme&width=600&height=400&seq=3&orientation=landscape"
+                alt="E-Commerce Platform"
+                class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-110"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <div class="p-4">
+                <a
+                href="#"
+                class="px-4 py-2 bg-blue-600 text-white rounded-md inline-block cursor-pointer !rounded-button whitespace-nowrap"
+                >
+                View Project
+                </a>
+                </div>
+                </div>
+                </div>
+                <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">E-Commerce Platform</h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-4">
+                A full-featured online store with product management, cart functionality, and secure checkout.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">React</span>
+                <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm">Node.js</span>
+                <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 rounded-full text-sm">MongoDB</span>
+                </div>
+                </div>
+                </div>
+                <!-- {/* Project 2 */} -->
+                <div class="bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <div class="relative h-60 overflow-hidden">
+                <img
+                src="https://readdy.ai/api/search-image?query=Task%20management%20application%20interface%20with%20kanban%20board%2C%20task%20cards%2C%20calendar%20view%2C%20progress%20tracking%2C%20clean%20modern%20UI%2C%20productivity%20app%20dashboard%2C%20blue%20and%20white%20color%20scheme&width=600&height=400&seq=4&orientation=landscape"
+                alt="Task Management App"
+                class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-110"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <div class="p-4">
+                <a
+                href="#"
+                class="px-4 py-2 bg-blue-600 text-white rounded-md inline-block cursor-pointer !rounded-button whitespace-nowrap"
+                >
+                View Project
+                </a>
+                </div>
+                </div>
+                </div>
+                <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">Task Management App</h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-4">
+                A collaborative task management tool with real-time updates and progress tracking.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">Vue.js</span>
+                <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 rounded-full text-sm">Firebase</span>
+                <span class="px-3 py-1 bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200 rounded-full text-sm">Sass</span>
+                </div>
+                </div>
+                </div>
+                <!-- {/* Project 3 */} -->
+                <div class="bg-white dark:bg-gray-900 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <div class="relative h-60 overflow-hidden">
+                <img
+                src="https://readdy.ai/api/search-image?query=Financial%20dashboard%20with%20data%20visualization%2C%20charts%2C%20graphs%2C%20analytics%20panels%2C%20modern%20UI%20design%2C%20business%20intelligence%20interface%2C%20blue%20and%20white%20color%20scheme%2C%20professional%20financial%20app&width=600&height=400&seq=5&orientation=landscape"
+                alt="Financial Dashboard"
+                class="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-110"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
+                <div class="p-4">
+                <a
+                href="#"
+                class="px-4 py-2 bg-blue-600 text-white rounded-md inline-block cursor-pointer !rounded-button whitespace-nowrap"
+                >
+                View Project
+                </a>
+                </div>
+                </div>
+                </div>
+                <div class="p-6">
+                <h3 class="text-xl font-bold mb-2">Financial Dashboard</h3>
+                <p class="text-gray-600 dark:text-gray-400 mb-4">
+                An interactive dashboard for financial data visualization and analysis.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">React</span>
+                <span class="px-3 py-1 bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 rounded-full text-sm">D3.js</span>
+                <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-800 dark:text-indigo-200 rounded-full text-sm">TypeScript</span>
+                </div>
+                </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+            <a
+            href="#"
+            class="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md transition-colors duration-300 shadow-lg hover:shadow-xl inline-block cursor-pointer !rounded-button whitespace-nowrap"
+            >
+            View All Projects
+            </a>
+            </div>
+            </div>
+            </section>
+            <!-- {/* Skills Section */} -->
+            <section id="skills" class="py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
+                <div class="container mx-auto px-6">
+                    <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Skills & Expertise</h2>
+                    <div class="w-20 h-1 bg-blue-600 dark:bg-blue-400 mx-auto"></div>
+                    <p class="text-gray-600 dark:text-gray-300 mt-6 max-w-2xl mx-auto">
+                    My technical toolkit and areas of expertise in web development.
+                    </p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+                    <!-- {/* Frontend Skills */} -->
+                        <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+                        <div class="text-center mb-6">
+                        <div class="inline-block p-4 rounded-full bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400 mb-4">
+                        <i class="fas fa-code text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Core Technologies</h3>
+                        </div>
+                        <div class="space-y-4">
+                        <div>
+                        <div class="flex justify-between mb-1">
+                        <span class="font-medium">HTML5/CSS3</span>
+                        <span>98%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                        <div class="bg-blue-600 dark:bg-blue-400 h-2 rounded-full" style="width: 98%;"></div>
+                        </div>
+                        </div>
+                        <div>
+                        <div class="flex justify-between mb-1">
+                        <span class="font-medium">JavaScript</span>
+                        <span>90%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                        <div class="bg-blue-600 dark:bg-blue-400 h-2 rounded-full" style="width: 90%;"></div>
+                        </div>
+                        </div>
+                        <div>
+                        <div class="flex justify-between mb-1">
+                        <span class="font-medium">React</span>
+                        <span>85%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                        <div class="bg-blue-600 dark:bg-blue-400 h-2 rounded-full" style="width: 85%;"></div>
+                        </div>
+                        </div>
+                        <div>
+                        <div class="flex justify-between mb-1">
+                        <span class="font-medium">Vue.js</span>
+                        <span>45%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                        <div class="bg-blue-600 dark:bg-blue-400 h-2 rounded-full" style="width: 45%;"></div>
+                        </div>
+                        </div>
+                        <div>
+                        <div class="flex justify-between mb-1">
+                        <span class="font-medium">Tailwind CSS</span>
+                        <span>90%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                        <div class="bg-blue-600 dark:bg-blue-400 h-2 rounded-full" style="width: 90%;"></div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        <!-- {/* Backend Skills */} -->
+                        <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+                        <div class="text-center mb-6">
+                        <div class="inline-block p-4 rounded-full bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-400 mb-4">
+                        <i class="fas fa-paint-brush text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Design & Frameworks</h3>
+                        </div>
+                        <div class="space-y-4">
+                        <div>
+                        <div class="flex justify-between mb-1">
+                        <span class="font-medium">React</span>
+                        <span>75%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                        <div class="bg-green-600 dark:bg-green-400 h-2 rounded-full" style="width: 75%;"></div>
+                        </div>
+                        </div>
+                        <div>
+                        <div class="flex justify-between mb-1">
+                        <span class="font-medium">Tailwind CSS</span>
+                        <span>90%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                        <div class="bg-green-600 dark:bg-green-400 h-2 rounded-full" style="width: 90%;"></div>
+                        </div>
+                        </div>
+                        <div>
+                        <div class="flex justify-between mb-1">
+                        <span class="font-medium">Sass/SCSS</span>
+                        <span>92%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                        <div class="bg-green-600 dark:bg-green-400 h-2 rounded-full width:" style="width: 92%;"></div>
+                        </div>
+                        </div>
+                        <div>
+                        <div class="flex justify-between mb-1">
+                        <span class="font-medium">Figma</span>
+                        <span>85%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                        <div class="bg-green-600 dark:bg-green-400 h-2 rounded-full" style="width: 85%;"></div>
+                        </div>
+                        </div>
+                        <div>
+                        <div class="flex justify-between mb-1">
+                        <span class="font-medium">UI/UX Design</span>
+                        <span>88%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                        <div class="bg-green-600 dark:bg-green-400 h-2 rounded-full" style="width: 88%;"></div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        <!-- {/* Tools & Others */} -->
+                        <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg shadow-lg">
+                        <div class="text-center mb-6">
+                        <div class="inline-block p-4 rounded-full bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-400 mb-4">
+                        <i class="fas fa-tools text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Tools & Others</h3>
+                        </div>
+                        <div class="space-y-4">
+                        <div>
+                        <div class="flex justify-between mb-1">
+                        <span class="font-medium">Git & GitHub</span>
+                        <span>90%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                        <div class="bg-purple-600 dark:bg-purple-400 h-2 rounded-full" style="width: 90%;"></div>
+                        </div>
+                        </div>
+                        <div>
+                        <div class="flex justify-between mb-1">
+                        <span class="font-medium">Docker</span>
+                        <span>75%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                        <div class="bg-purple-600 dark:bg-purple-400 h-2 rounded-full" style="width: 75%;"></div>
+                        </div>
+                        </div>
+                        <div>
+                        <div class="flex justify-between mb-1">
+                        <span class="font-medium">AWS</span>
+                        <span>70%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                        <div class="bg-purple-600 dark:bg-purple-400 h-2 rounded-full" style="width: 70%;"></div>
+                        </div>
+                        </div>
+                        <div>
+                        <div class="flex justify-between mb-1">
+                        <span class="font-medium">UI/UX Design</span>
+                        <span>80%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                        <div class="bg-purple-600 dark:bg-purple-400 h-2 rounded-full" style="width: 80%;"></div>
+                        </div>
+                        </div>
+                        <div>
+                        <div class="flex justify-between mb-1">
+                        <span class="font-medium">Agile/Scrum</span>
+                        <span>85%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                        <div class="bg-purple-600 dark:bg-purple-400 h-2 rounded-full" style="width: 85%;"></div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- {/* About Section */} -->
+            <section id="about" class="py-20 bg-gray-50 dark:bg-gray-800 transition-colors duration-300">
+                <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
+                <div class="w-20 h-1 bg-blue-600 dark:bg-blue-400 mx-auto"></div>
+                <p class="text-gray-600 dark:text-gray-300 mt-6 max-w-2xl mx-auto">
+                Get to know more about me, my background, and what drives me as a developer.
+                </p>
+                </div>
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-2/5">
+                <div class="rounded-lg overflow-hidden shadow-xl">
+                <img
+                src="public/Webi.jpg"
+                alt="Tech World"
+                class="w-full h-full object-cover object-top"
+                />
+                </div>
+                </div>
+                <div class="w-full md:w-3/5">
+                <h3 class="text-2xl font-bold mb-4">My Journey</h3>
+                <p class="text-gray-600 dark:text-gray-300 mb-6">
+                I'm a passionate frontend developer with over 1 year of experience crafting beautiful user interfaces. My journey in web development began with a deep fascination for creating visually stunning and intuitive web experiences that make a real impact.
+                </p>
+                <p class="text-gray-600 dark:text-gray-300 mb-6">
+                I specialize in translating design concepts into responsive, pixel-perfect websites using modern frontend technologies. My approach combines creative design thinking with technical expertise in HTML, CSS, and JavaScript frameworks to deliver exceptional user experiences.
+                </p>
+                <div class="mb-8">
+                <h4 class="text-xl font-semibold mb-3">Experience</h4>
+                <div class="space-y-4">
+                <div class="flex">
+                <div class="mr-4 text-blue-600 dark:text-blue-400">
+                <i class="fas fa-briefcase text-xl"></i>
+                </div>
+                <div>
+                <h5 class="font-bold">Senior Frontend Developer</h5>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Einstein Digital | 2024 - Present</p>
+                </div>
+                </div>
+                <div class="flex">
+                <div class="mr-4 text-blue-600 dark:text-blue-400">
+                <i class="fas fa-briefcase text-xl"></i>
+                </div>
+                <div>
+                <h5 class="font-bold">UI Developer</h5>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Einstein Digital | 2025 - Present </p>
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="mb-8">
+                <h4 class="text-xl font-semibold mb-3">Education</h4>
+                <div class="space-y-4">
+                <div class="flex">
+                <div class="mr-4 text-blue-600 dark:text-blue-400">
+                <i class="fas fa-graduation-cap text-xl"></i>
+                </div>
+                <div>
+                <h5 class="font-bold">Diploma in web development using HTML and CSS</h5>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Alison | 2023</p>
+                </div>
+                </div>
+                <div class="flex">
+                <div class="mr-4 text-blue-600 dark:text-blue-400">
+                <i class="fas fa-graduation-cap text-xl"></i>
+                </div>
+                <div>
+                <h5 class="font-bold">Responsive Web Design</h5>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Freecodecamp | 2023</p>
+                </div>
+                </div>
+                <div class="flex">
+                <div class="mr-4 text-blue-600 dark:text-blue-400">
+                <i class="fas fa-graduation-cap text-xl"></i>
+                </div>
+                <div>
+                <h5 class="font-bold">Software Engineering</h5>
+                <p class="text-sm text-gray-500 dark:text-gray-400">ALX | Present</p>
+                </div>
+                </div>
+                </div>
+                </div>
+                <a
+                href="#"
+                class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md transition-colors duration-300 inline-flex items-center cursor-pointer !rounded-button whitespace-nowrap"
+                >
+                <i class="fas fa-download mr-2"></i>
+                Download Resume
+                </a>
+                </div>
+                </div>
+                </div>
+            </section>
+            <!-- {/* Contact Section */} -->
+            <section id="contact" class="py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
+                <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
+                <div class="w-20 h-1 bg-blue-600 dark:bg-blue-400 mx-auto"></div>
+                <p class="text-gray-600 dark:text-gray-300 mt-6 max-w-2xl mx-auto">
+                Have a project in mind or want to discuss potential opportunities? I'd love to hear from you!
+                </p>
+                </div>
+                <div class="flex flex-col md:flex-row gap-12">
+                <div class="w-full md:w-1/2">
+                <form class="space-y-6">
+                <div>
+                <label htmlFor="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                Your Name
+                </label>
+                <input
+                type="text"
+                id="name"
+                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 dark:focus:ring-blue-400 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+                placeholder="Einstein"
+                />
+                </div>
+                <div>
+                <label htmlFor="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                Email Address
+                </label>
+                <input
+                type="email"
+                id="email"
+                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 dark:focus:ring-blue-400 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+                placeholder="einstein@gmail.com"
+                />
+                </div>
+                <div>
+                <label htmlFor="subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                Subject
+                </label>
+                <input
+                type="text"
+                id="subject"
+                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 dark:focus:ring-blue-400 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white"
+                placeholder="Project Inquiry"
+                />
+                </div>
+                <div>
+                <label htmlFor="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+                Your Message
+                </label>
+                <textarea
+                id="message"
+                rows={5}
+                class="w-full px-4 py-3 border border-gray-300 dark:border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 dark:focus:ring-blue-400 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-white resize-none"
+                placeholder="Tell me about your project..."
+                ></textarea>
+                </div>
+                <button
+                type="submit"
+                class="w-full px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md transition-colors duration-300 cursor-pointer !rounded-button whitespace-nowrap"
+                >
+                Send Message
+                </button>
+                </form>
+                </div>
+                <div class="w-full md:w-1/2">
+                <div class="bg-gray-50 dark:bg-gray-800 p-8 rounded-lg shadow-lg h-full">
+                <h3 class="text-xl font-bold mb-6">Contact Information</h3>
+                <div class="space-y-6">
+                <div class="flex items-start">
+                <div class="mr-4 p-3 bg-blue-100 dark:bg-blue-900 rounded-full text-blue-600 dark:text-blue-400">
+                <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                <h4 class="font-semibold">Email</h4>
+                <p class="text-gray-600 dark:text-gray-300">einstenmarto30@gmail.com</p>
+                </div>
+                </div>
+                <div class="flex items-start">
+                <div class="mr-4 p-3 bg-blue-100 dark:bg-blue-900 rounded-full text-blue-600 dark:text-blue-400">
+                <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                <h4 class="font-semibold">Location</h4>
+                <p class="text-gray-600 dark:text-gray-300">Komarock, Nairobi</p>
+                </div>
+                </div>
+                <div class="flex items-start">
+                <div class="mr-4 p-3 bg-blue-100 dark:bg-blue-900 rounded-full text-blue-600 dark:text-blue-400">
+                <i class="fas fa-clock"></i>
+                </div>
+                <div>
+                <h4 class="font-semibold">Working Hours</h4>
+                <p class="text-gray-600 dark:text-gray-300">Monday - Saturday, 9AM - 6PM EAT</p>
+                </div>
+                </div>
+                </div>
+                <div class="mt-8">
+                <h4 class="font-semibold mb-4">Connect With Me</h4>
+                <div class="flex space-x-4">
+                <a href="https://github.com/Einsteinke-hub" class="p-3 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-700 dark:text-gray-300 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 transition-colors duration-300 cursor-pointer">
+                <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/einstein-dipondo-13b322362?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="p-3 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-700 dark:text-gray-300 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 transition-colors duration-300 cursor-pointer">
+                <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://x.com/cfc_Einstein?t=gTgSijSYiV_gYvHS1MmQog&s=09" class="p-3 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-700 dark:text-gray-300 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 transition-colors duration-300 cursor-pointer">
+                <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/einsteinmusundi/profilecard/?igsh=MWs3YXFqMDZmZWw1" class="p-3 bg-gray-200 dark:bg-gray-700 rounded-full text-gray-700 dark:text-gray-300 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 transition-colors duration-300 cursor-pointer">
+                <i class="fa-brands fa-instagram"></i>
+                </a>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+            </section>
+    </main>
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-8 md:mb-0">
+        <a href="#" class="text-2xl font-bold text-blue-600 dark:text-blue-400">
+        <span class="font-extrabold">Einstein</span><span class="font-light ml--2">Dipondo</span>
+        </a>
+        <p class="mt-2 dark:text-gray-400">Frontend Developer</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-6 mb-8 md:mb-0 items-center space-x-8">
+            <a href="#portfolio" class="dark:hover:text-blue-400 dark:text-gray-300 transition-colors duration-300">Portfolio</a>
+            <a href="#skills" class="dark:hover:text-blue-400 dark:text-gray-300 transition-colors duration-300">Skills</a>
+            <a href="#about" class="dark:hover:text-blue-400 dark:text-gray-300 transition-colors duration-300">About</a>
+            <a href="#contact" class="dark:hover:text-blue-400 dark:text-gray-300 transition-colors duration-300">Contact</a>
+        </div>
+        <div class="flex space-x-4">
+        <a href="https://github.com/Einsteinke-hub" class="p-2 rounded-full dark:bg-gray-800 hover:bg-blue-600 transition-colors duration-300 cursor-pointer">
+        <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/einstein-dipondo-13b322362?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="p-2 rounded-full dark:bg-gray-800 hover:bg-blue-600 transition-colors duration-300 cursor-pointer">
+        <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://x.com/cfc_Einstein?t=gTgSijSYiV_gYvHS1MmQog&s=09" class="p-2 rounded-full dark:bg-gray-800 hover:bg-blue-600 transition-colors duration-300 cursor-pointer">
+        <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/einsteinmusundi/profilecard/?igsh=MWs3YXFqMDZmZWw1" class="p-2 rounded-full dark:bg-gray-800 hover:bg-blue-600 transition-colors duration-300 cursor-pointer">
+        <i class="fa-brands fa-instagram"></i>
+        </a>
+        </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-400">©2025 Einstein Dipondo. All rights reserved.</p>
+        <a
+            href="#"
+            id="backToTopButton"
+            class="mt-4 md:mt-0 p-2 rounded-full bg-blue-600 hover:bg-blue-700 transition-colors duration-300 cursor-pointer"
+            aria-label="Back to top"
+            >
+            <i class="fas fa-arrow-up"></i>
+        </a>
+        </div>
+        </div>
+    </footer>
+
+
+        
+        
+ <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const backToTopButton = document.getElementById('backToTopButton');
+
+    backToTopButton.addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent the default anchor behavior
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+
+    const fontAwesomeLink = document.createElement('link');
+    fontAwesomeLink.rel = 'stylesheet';
+    fontAwesomeLink.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css';
+    document.head.appendChild(fontAwesomeLink);
+
+    const menuButton = document.getElementById('menuButton');
+    const myMenu = document.getElementById('myMenu');
+
+    menuButton.addEventListener('click', function() {
+        myMenu.classList.toggle('open');
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('section');
+
+            const handleScroll = () => {
+                const scrollPosition = window.scrollY;
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 60; // Adjust for navigation height
+                    const sectionHeight = section.offsetHeight;
+                    const sectionId = section.getAttribute('id');
+
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                        navLinks.forEach(link => {
+                            link.classList.remove('active'); // Remove the 'active' class from all links
+                        });
+                        const activeLink = document.querySelector(`nav a[data-section="${sectionId}"]`);
+                        if (activeLink) {
+                            activeLink.classList.add('active'); // Add the 'active' class to the current section's link
+                        }
+                    }
+                });
+            };
+
+            // Attach the scroll event listener
+            window.addEventListener('scroll', handleScroll);
+
+            // Optionally, highlight the initial section on load
+            handleScroll();
+        });
+            const mobileMenu = document.getElementById('mobileMenu');
+            const mobileNavLink = document.querySelectorAll('.mobile-nav-link');
+            let isMenuOpen = false; // Keep track of the menu state
+
+            function toggleMobileMenu() {
+                isMenuOpen = !isMenuOpen;
+                mobileMenu.style.maxHeight = isMenuOpen ? '60rem' : '0'; // Use 'rem' for better responsiveness
+            }
+
+            // You'll need a way to trigger the toggleMobileMenu function, 
+            // likely from a button click (e.g., a hamburger menu icon).
+            // Example:
+            const hamburgerButton = document.getElementById('hamburgerButton'); // Assuming you have a button with this ID
+            if (hamburgerButton) {
+                hamburgerButton.addEventListener('click', toggleMobileMenu);
+            }
+
+            // Close the menu when a navigation link is clicked
+            mobileNavLink.forEach(link => {
+                link.addEventListener('click', () => {
+                isMenuOpen = false;
+                mobileMenu.style.maxHeight = '0';
+                // Optionally, scroll to the target section
+                const targetId = link.getAttribute('data-target');
+                if (targetId) {
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+                });
+            });
+
+            document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const mobileNavLink = document.querySelectorAll('.mobile-nav-link');
+            let isMenuOpen = false; // Initialize the menu state
+
+            function toggleMenu() {
+            isMenuOpen = !isMenuOpen;
+            mobileMenu.style.maxHeight = isMenuOpen ? '240px' : '0px'; // Adjust '240px' as needed
+            }
+
+            // You'll need a way to trigger the toggleMenu function, 
+            // likely from a hamburger menu icon. For example:
+            const hamburgerButton = document.getElementById('hamburgerButton'); // Assuming you have a button with this ID
+
+            if (hamburgerButton) {
+            hamburgerButton.addEventListener('click', toggleMenu);
+            }
+
+            mobileNavLink.forEach(link => {
+            link.addEventListener('click', function() {
+                toggleMenu(); // Close the menu when a link is clicked
+                const targetId = this.getAttribute('data-target');
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+            });
+         });
+
+         document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const hamburgerButton = document.getElementById('hamburgerButton');
+            const mobileNavLink = document.querySelectorAll('.mobile-nav-link');
+            let isMenuOpen = false;
+
+            function toggleMenu() {
+            isMenuOpen = !isMenuOpen;
+            mobileMenu.style.maxHeight = isMenuOpen ? '240px' : '0px'; // Adjust '240px' as needed
+            }
+
+            if (hamburgerButton) {
+            hamburgerButton.addEventListener('click', toggleMenu);
+            }
+
+            mobileNavLink.forEach(link => {
+            link.addEventListener('click', function() {
+                toggleMenu(); // Close the menu when a link is clicked
+                const targetId = this.getAttribute('data-target');
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+            });
+        });
+  </script>
+</body>
+</html>
